@@ -33,7 +33,7 @@ def getCoinValue():
     print('Valor atual: ' + page[priceLocation:finalLocation])
     print(lastRefresh.strftime("%d/%m/%Y, %H:%M:%S"))
     print('--------------------')
-    if price <= min:
+    if price.replace(",", "") <= min:
         winsound.PlaySound("lightsaber.wav", winsound.SND_ASYNC)
         print("COMPRA LIBERADA!")
     Timer(10.0, getCoinValue).start()
