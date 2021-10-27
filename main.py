@@ -12,9 +12,9 @@ print('Loading...')
 
 pastPrice = ''
 
+
 def getCoinValue():
     global pastPrice
-
     page = urllib.request.urlopen('https://coinmarketcap.com/currencies/' + coin + '/')
     page = str(page.read())
 
@@ -22,23 +22,20 @@ def getCoinValue():
     finalLocation = page.index('</div>', firstLocation)
     priceLocation = page.index('$', firstLocation)
 
-    price = page[priceLocation+1:finalLocation]
+    price = page[priceLocation + 1:finalLocation]
+
     lastRefresh = datetime.now()
 
     os.system("cls")
-
     print('--------------------')
     print((coin.replace("-", " ")).capitalize())
     print('Valor desejado: $' + min)
     print('Valor atual: ' + page[priceLocation:finalLocation])
     print(lastRefresh.strftime("%d/%m/%Y, %H:%M:%S"))
     print('--------------------')
-
-
-    if price <= min:
+    if price.replace(",", "") <= min:
         winsound.PlaySound("lightsaber.wav", winsound.SND_ASYNC)
         print("COMPRA LIBERADA!")
-
     Timer(10.0, getCoinValue).start()
     pastPrice = price
 
