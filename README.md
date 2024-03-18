@@ -29,10 +29,10 @@ Resolvi?
 # Algumas imagens da interface da aplicação:
 
 <h1 align="center">
-  <img alt="Home" src="https://cdn.discordapp.com/attachments/904712495292358677/904712542528618526/unknown.png" width="800px" />
+  <img alt="Home" src="https://media.discordapp.net/attachments/904712495292358677/904712542528618526/unknown.png?ex=660aac36&is=65f83736&hm=3255f9e2a4ba329e3c869e4c22c94b4ec49724219843a92bdbf63e5838e93e91&=&format=webp&quality=lossless&width=765&height=468" width="800px" />
 </h1>
 <h1 align="center">
-  <img alt="Working" src="https://cdn.discordapp.com/attachments/904712495292358677/904713052052664350/unknown.png" width="800px" />
+  <img alt="Working" src="https://media.discordapp.net/attachments/904712495292358677/904713052052664350/unknown.png?ex=660aacb0&is=65f837b0&hm=b854e448584d06ece8442e290cea4c84e5474e6e5817a2ff7374489a79d2ce22&=&format=webp&quality=lossless&width=775&height=468" width="800px" />
 </h1>
 
 ## :hammer: Tecnologias
